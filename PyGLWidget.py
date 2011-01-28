@@ -4,7 +4,7 @@
 #
 # A simple GL Viewer.
 #
-# Copyright (c) <year>, <copyright holder>
+# Copyright (c) 2011, Arne Schmitz <arne.schmitz@gmx.net>
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -47,7 +47,7 @@ class PyGLWidget(QtOpenGL.QGLWidget):
     rotationBeginEvent = QtCore.pyqtSignal()
     rotationEndEvent = QtCore.pyqtSignal()
 
-    def __init__(self, parent):
+    def __init__(self, parent = None):
         format = QtOpenGL.QGLFormat()
         format.setSampleBuffers(True)
         QtOpenGL.QGLWidget.__init__(self, format, parent)
